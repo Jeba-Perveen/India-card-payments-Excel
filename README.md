@@ -21,9 +21,8 @@ An advanced Excel dashboard analyzing India's credit and debit card payment ecos
 
 ## Overview
 
-This project analyzes 6 months (January–June 2026) of bank-wise card and payment infrastructure data published by the Reserve Bank of India (RBI). It covers 70+ banks across 5 categories (Public Sector, Private Sector, Foreign, Payment, and Small Finance Banks), tracking credit/debit card issuance, transaction volumes, and transaction values across PoS, online, and ATM channels.
+This project analyzes 6 months (January–June 2026) of bank-wise card and payment infrastructure data published by the Reserve Bank of India (RBI). It covers different banks across 5 categories (Public Sector, Private Sector, Foreign, Payment, and Small Finance Banks), tracking credit/debit card issuance, transaction volumes, and transaction values across PoS, online, and ATM channels.
 
-The goal was to build a portfolio-quality, end-to-end Excel analytics project — from raw, messy government data to a fully interactive dashboard — without using Python or SQL, to demonstrate advanced Excel capability for data analyst roles.
 
 ## Data Source
 
@@ -38,16 +37,16 @@ https://www.rbi.org.in/Scripts/ATMView.aspx
 |---|---|
 | Power Query | Data cleaning and transformation |
 | Power Pivot / Data Model | Relational data modeling |
-| DAX | 15+ calculated measures |
+| DAX | calculated measures |
 | PivotTables & PivotCharts | Category-level and bank-level analysis |
 | Slicers | Interactive filtering by Bank Category and Month |
 
 ## Project Workflow
 
-1. **Data Cleaning (Power Query)** — Removed multi-row government-report headers, renamed 28 columns, extracted bank category labels using a fill-down technique, filtered out subtotal/footer rows, and fixed data types.
+1. **Data Cleaning (Power Query)** — Removed multi-row government-report headers, renamed columns, extracted bank category labels using a fill-down technique, filtered out subtotal/footer rows, and fixed data types.
 2. **Data Modeling** — Appended all 6 monthly tables into a single fact table (~380 rows) and loaded it into the Data Model.
 3. **DAX Measures** — Built core aggregation measures (Total Credit/Debit/Card Transaction Value & Volume), Crore-converted versions for readability, Credit Card Penetration Rate, and combined Channel Mix values (PoS/Online/ATM Withdrawal).
-4. **Analysis** — Built both category-level (5 bank types) and bank-level ("company-level," 70+ individual banks) views to mirror how a business analyst would compare peer groups and individual players.
+4. **Analysis** — Built both category-level (5 bank types) and bank-level ("company-level," individual banks) views to mirror how a business analyst would compare peer groups and individual players.
 5. **Dashboard** — Assembled 5 charts, 4 KPI cards, and 2 connected slicers into a single interactive dashboard sheet.
 
 ## Key Insights
